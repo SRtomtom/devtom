@@ -3,9 +3,24 @@
     padding: 0;
 }
 
+html, body{
+    height: 100%;
+
+}
+
+html{
+    display: table;
+    margin: auto;
+}
+
 body{
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+
 }
 
 /* navbar */
@@ -63,12 +78,9 @@ section#intro{
 
     width: 100%;
     height: 100vh;
-
-    
 }
 
 section#intro div#geralintro{
-    
     color: #ffffff;
     text-align: center;
 }
@@ -83,6 +95,47 @@ section#intro div#geralintro h1{
 }
 
 
+
+/* Quem Sou */
+
+
+#sobre_mim{
+    max-width: 100%; /*tamanho maximo da tela*/
+    align-items: center; /*posição de tudo dentro dessa section*/
+
+    vertical-align: middle;
+
+    background-color: #ffffff;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    overflow: hidden; /*não deixa as coisas passarem do tamanho*/
+
+    justify-content: space-between;
+}
+
+#sobre_mim h1{
+    border-top: 80px solid transparent; 
+    border-bottom: 80px solid transparent; 
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#sobre_mim div#quemsoutext{
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    text-align: justify;
+}
+
+#sobre_mim #quemsouimg{
+    width: 50%;
+        
+}
+
+
 /* portifólio*/
 
 #portifolio{
@@ -91,9 +144,7 @@ section#intro div#geralintro h1{
     background-size: cover;
     width: 100%;
     height: 100vh;
-
-    width: 100%;
-
+    
     border-top: 80px solid transparent; 
     border-bottom: 80px solid transparent; 
 }
@@ -110,30 +161,67 @@ section#intro div#geralintro h1{
 
 }
 
-section#portifolio h3{
+#portifolio h3{
     text-transform: uppercase;
     width: 250px;
     text-align: center;
     padding: 20px 0 ; 
 }
 
-section#portifolio h6 {
+#portifolio h6 {
     width: 250px;
     text-align: justify;
 }
     
-section#portifolio a {
+#portifolio a {
     text-decoration: none;
     color: #FFB923;
     text-align: center;
 }
 
-section#portifolio div#imgtext{
+#portifolio div#imgtext{
     display: flex;
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    height: 100%;
+
+    align-items: center;
 }
 
 
+/*linguagens*/
+
+#linguagens{
+    background-color: #ffffff;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#linguagens h1{
+    border-top: 80px solid transparent; 
+    border-bottom: 80px solid transparent; 
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*links externos*/
+
+#links{
+    background-color: #ffffff;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#links h1{
+    border-top: 80px solid transparent; 
+    border-bottom: 80px solid transparent; 
+
+    text-align: center;
+    text-transform: uppercase;
+}
 
