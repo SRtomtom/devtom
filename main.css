@@ -1,64 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* navbar */
 
-header nav{
+header nav {
     width: 100%;
 }
 
-#navbar{
+#navbar {
     background-color: #FFB923;
-    position: fixed; /*menu fixo*/ 
+    /*menu fixo*/
+    position: fixed;
+
 }
 
-header nav ul{  
+header nav ul {
     display: flex;
-    justify-content: center;   
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-header nav ul img{
+header nav ul img {
     width: 4rem;
     margin: 0 10px;
     border-top: 1000px;
 }
 
-header nav ul li{
+header nav ul li {
     margin: 0 30px;
     list-style: none;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-align: center;
     text-decoration: none;
-    color: #ffffff;    
+    color: #ffffff;
 }
 
-header nav ul li  :hover{
+header nav ul li :hover {
     transition: all 0.2s;
     border-left: 0px solid transparent;
 
     border-left: 5px solid #ffffff;
     font-weight: bold;
-    
+
 }
 
-
-
-
-
 /* Intro */
-
-section#intro{
+section#intro {
     background-image: url(img/TonDev.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,207 +64,175 @@ section#intro{
     height: 100vh;
 }
 
-section#intro div#geralintro{
+section#intro div#geralintro {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
     color: #ffffff;
-    text-align: center;
+
+    align-items: center;
+    justify-content: center;
 }
 
-section#intro div#geralintro img{
+section#intro div#geralintro img {
     width: 10rem;
-    border-top: 400px solid transparent;  /*TEM QUE ARRUMAR ISSO AQUI, TA SAINDO DA SECTION*/
 }
 
-section#intro div#geralintro h1{
+section#intro div#geralintro h1 {
     font-size: 50px;
 }
 
-
-
-
-
 /* Quem Sou */
-
-
-#sobre_mim{
-    max-width: 100vw;                 /*tamanho maximo da tela*/
-    align-items: center;            /*posição de tudo dentro dessa section*/
+#sobre_mim {
+    max-width: 100vw;
+    /*tamanho maximo da tela*/
+    align-items: center;
+    /*posição de tudo dentro dessa section*/
 
     background-color: #ffffff;
     background-size: cover;
 
-
     display: flex;
-    overflow: hidden;               /*não deixa as coisas passarem do tamanho*/
+    overflow: hidden;
+    /*não deixa as coisas passarem do tamanho*/
 
     margin-left: auto;
     margin-right: auto;
-    
 
     justify-content: center;
-    
-    
+
     gap: 20px;
 
 }
 
-#sobre_mim #porcaria{
-    padding: 0 100px ;
-
+#sobre_mim #porcaria {
+    padding: 0 100px;
 }
 
-#sobre_mim h1{
+#sobre_mim h1 {
 
-    font-size: 60PX ;  /*QUAL TAMANHO DO TEXTO ?*/
+    font-size: 60PX;
+    /*QUAL TAMANHO DO TEXTO ?*/
 
-    border-top: 80px solid transparent; 
+    border-top: 80px solid transparent;
     border-bottom: 80px solid transparent;
 
     text-transform: uppercase;
-    text-align: center; 
-
-    
-}
-
-
-
-
-#sobre_mim h3{
-    
-    text-align: justify;
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
-}
-
-#sobre_mim h5{
-    border-top: 15px solid transparent; 
     text-align: center;
 }
 
-#sobre_mim div#quemsoutext{    
-    width: 50%;
-}
+#sobre_mim h3 {
+    text-align: justify;
 
-
-
-#sobre_mim #quemsouimg{
-    width: 50%;
-}
-
-#sobre_mim #quemsouimg img{
-    max-height: 980px;  
-    
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
+#sobre_mim h5 {
+    border-top: 15px solid transparent;
+    text-align: center;
+}
 
+#sobre_mim div#quemsoutext {
+    width: 50%;
+}
 
+#sobre_mim #quemsouimg {
+    width: 50%;
+}
 
+#sobre_mim #quemsouimg img {
+    max-height: 980px;
 
-
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* portifólio*/
 
-#portifolio{
-
+#portifolio {
     background-color: #ffffff;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    
-    border-top: 80px solid transparent; 
-    border-bottom: 80px solid transparent; 
+
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
 }
 
-#portifolio h1{
+#portifolio h1 {
     text-align: center;
     text-transform: uppercase;
 }
 
-#portifolio img{
+#portifolio img {
     align-items: center;
     border-top: 50px solid transparent;
     width: 250px;
-
 }
 
-#portifolio h3{
+#portifolio h3 {
     text-transform: uppercase;
     width: 250px;
     text-align: center;
-    padding: 20px 0 ; 
+    padding: 20px 0;
 }
 
 #portifolio h6 {
     width: 250px;
     text-align: justify;
 }
-    
+
 #portifolio a {
     text-decoration: none;
     color: #FFB923;
     text-align: center;
 }
 
-#portifolio div#imgtext{
+#portifolio div#imgtext {
     display: flex;
-    
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
-
     align-items: center;
-
     height: 100%;
-
-    
 }
-
-
-
 
 
 /*linguagens*/
 
-#linguagens{
+#linguagens {
     background-color: #ffffff;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-#linguagens h1{
-    border-top: 80px solid transparent; 
-    border-bottom: 80px solid transparent; 
-
+#linguagens h1 {
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
     text-align: center;
     text-transform: uppercase;
 }
-
-
-
-
 
 /*links externos*/
 
-#links{
+#links {
     background-color: #ffffff;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-#links h1{
-    border-top: 80px solid transparent; 
-    border-bottom: 80px solid transparent; 
+#links h1 {
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
 
     text-align: center;
     text-transform: uppercase;
 }
-
