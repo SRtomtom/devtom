@@ -107,14 +107,14 @@ section#intro div#geralintro h1 {
 
 }
 
-#sobre_mim #porcaria {
+#sobre_mim #biografia {
     padding: 0 100px;
 }
 
 #sobre_mim h1 {
 
     font-size: 60PX;
-    /*QUAL TAMANHO DO TEXTO ?*/
+
 
     border-top: 80px solid transparent;
     border-bottom: 80px solid transparent;
@@ -160,6 +160,7 @@ section#intro div#geralintro h1 {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 
     border-top: 80px solid transparent;
     border-bottom: 80px solid transparent;
@@ -171,9 +172,8 @@ section#intro div#geralintro h1 {
 }
 
 #portifolio img {
-    align-items: center;
-    border-top: 50px solid transparent;
     width: 250px;
+    border-radius: 20%;
 }
 
 #portifolio h3 {
@@ -188,10 +188,13 @@ section#intro div#geralintro h1 {
     text-align: justify;
 }
 
-#portifolio a {
+#portifolio .p-acessar {
+    text-align: center;
+}
+
+#portifolio .p-acessar a{
     text-decoration: none;
     color: #FFB923;
-    text-align: center;
 }
 
 #portifolio div#imgtext {
@@ -211,6 +214,7 @@ section#intro div#geralintro h1 {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 #linguagens h1 {
@@ -220,6 +224,52 @@ section#intro div#geralintro h1 {
     text-transform: uppercase;
 }
 
+
+
+
+
+#linguagens #lingimg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px;
+    
+}
+
+#linguagens #lingimg #lista1{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    
+}
+
+#linguagens #lingimg #lista2{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    
+}
+
+#linguagens #lingimg img{
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*links externos*/
 
 #links {
@@ -227,6 +277,7 @@ section#intro div#geralintro h1 {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 #links h1 {
@@ -235,4 +286,32 @@ section#intro div#geralintro h1 {
 
     text-align: center;
     text-transform: uppercase;
+}
+
+#links #externos{
+
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#links #externos img{
+    width: 250px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFB923;
+    width: 100%;
+    height: 50px;
+}
+    
+footer #alinha{
+        color: #ffffff;        
 }
