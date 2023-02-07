@@ -6,6 +6,9 @@ linguagens até o momento:
 HTML
 CSS
 
+acessar página:
+https://srtomtom.github.io/devton/
+
 
 Proximas atualizações:
 
