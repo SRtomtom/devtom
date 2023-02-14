@@ -8,6 +8,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #FFB923;        
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;    
+    border-radius: 4px;       
+    border: 1px solid #FFB923;  
+  }
+
+
 /* navbar */
 
 header nav {
@@ -18,6 +33,8 @@ header nav {
     background-color: #FFB923;
     /*menu fixo*/
     position: fixed;
+
+    z-index: 2;
 
 }
 
@@ -86,7 +103,7 @@ section#intro div#geralintro h1 {
 
 /* Quem Sou */
 #sobre_mim {
-    max-width: 100vw;
+    max-width: 80vw;
     /*tamanho maximo da tela*/
     align-items: center;
     /*posição de tudo dentro dessa section*/
@@ -104,7 +121,6 @@ section#intro div#geralintro h1 {
     justify-content: center;
 
     gap: 20px;
-
 }
 
 #sobre_mim #biografia {
@@ -112,7 +128,6 @@ section#intro div#geralintro h1 {
 }
 
 #sobre_mim h1 {
-
     font-size: 60PX;
 
 
@@ -162,11 +177,14 @@ section#intro div#geralintro h1 {
     height: 100vh;
     overflow: hidden;
 
-    border-top: 80px solid transparent;
-    border-bottom: 80px solid transparent;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #portifolio h1 {
+    border-top: 80px solid transparent;
+
     text-align: center;
     text-transform: uppercase;
 }
@@ -174,6 +192,18 @@ section#intro div#geralintro h1 {
 #portifolio img {
     width: 250px;
     border-radius: 20%;
+
+    transition: all 0.5s;
+    border: 10px solid transparent;
+}
+
+
+#portifolio img:hover {
+    width: 250px;
+    border-radius: 20%;
+
+    -webkit-transform: scale(1.5);
+    transform: scale(0.9);
 }
 
 #portifolio h3 {
@@ -188,22 +218,13 @@ section#intro div#geralintro h1 {
     text-align: justify;
 }
 
-#portifolio .p-acessar {
-    text-align: center;
-}
-
-#portifolio .p-acessar a{
-    text-decoration: none;
-    color: #FFB923;
-}
-
 #portifolio div#imgtext {
     display: flex;
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    height: 100%;
+    height: 90vh;
 }
 
 
@@ -219,13 +240,9 @@ section#intro div#geralintro h1 {
 
 #linguagens h1 {
     border-top: 80px solid transparent;
-    border-bottom: 80px solid transparent;
     text-align: center;
     text-transform: uppercase;
 }
-
-
-
 
 
 #linguagens #lingimg{
@@ -233,6 +250,10 @@ section#intro div#geralintro h1 {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 100px;
+
+    height: 90vh;
+    justify-content: center;
+    
     
 }
 
@@ -260,16 +281,6 @@ section#intro div#geralintro h1 {
     width: 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*links externos*/
 
 #links {
@@ -278,11 +289,14 @@ section#intro div#geralintro h1 {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+
+    align-items: center;
+
+    
 }
 
 #links h1 {
     border-top: 80px solid transparent;
-    border-bottom: 80px solid transparent;
 
     text-align: center;
     text-transform: uppercase;
@@ -294,14 +308,22 @@ section#intro div#geralintro h1 {
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    height: 90vh;
     align-items: center;
+
+    max-width: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+
 
 }
 
 #links #externos img{
-    width: 250px;
+    width: 200px;
 }
 
+/*Rodapé*/
 footer{
     display: flex;
     align-items: center;
@@ -312,6 +334,6 @@ footer{
     height: 50px;
 }
     
-footer #alinha{
+footer #rodape{
         color: #ffffff;        
 }
