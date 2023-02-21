@@ -22,11 +22,11 @@ body::-webkit-scrollbar {
     border: 1px solid #FFB923;  
   }
 
-
 /* navbar */
 
 header nav {
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #navbar {
@@ -177,13 +177,20 @@ section#intro div#geralintro h1 {
     height: 100vh;
     overflow: hidden;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
+
+    padding-top: 80px;
 }
 
 #portifolio h1 {
-    border-top: 80px solid transparent;
+    display: block;
+    justify-content: end;
 
     text-align: center;
     text-transform: uppercase;
@@ -196,7 +203,6 @@ section#intro div#geralintro h1 {
     transition: all 0.5s;
     border: 10px solid transparent;
 }
-
 
 #portifolio img:hover {
     width: 250px;
@@ -223,8 +229,8 @@ section#intro div#geralintro h1 {
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
-    height: 90vh;
+    align-items: start;
+    height: 50vh;
 }
 
 
@@ -337,3 +343,124 @@ footer{
 footer #rodape{
         color: #ffffff;        
 }
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    /* Estilos para telas menores que 767px (ex.: smartphones) */
+    body {
+      font-size: 16px;
+    }
+  
+    #navbar {
+      display: none;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: #fff;
+      z-index: 1;
+    }
+  
+    #navbar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #navbar ul li {
+      margin: 10px 0;
+    }
+  
+    #navbar img {
+      display: block;
+      margin: auto;
+    }
+  
+    #intro {
+      height: 300px;
+    }
+  
+    #intro h1 {
+      font-size: 40px;
+      margin-top: 80px;
+    }
+  
+    #intro h3 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    #sobre_mim {
+      padding-top: 100px;
+      flex-direction: column;
+    }
+  
+    #quemsoutext {
+      order: 2;
+    }
+  
+    #quemsouimg {
+      order: 1;
+      margin-bottom: 40px;
+    }
+  
+    #imgtext {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .porimgtext {
+      margin-bottom: 40px;
+    }
+  
+    .porimgtext h3 {
+      font-size: 24px;
+    }
+  
+    .porimgtext h6 {
+      font-size: 14px;
+    }
+  
+    #linguagens {
+      padding-top: 100px;
+      flex-direction: column;
+    }
+  
+    #lingimg {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #lista1 {
+      margin-bottom: 40px;
+    }
+  
+    #lista2 {
+      margin-bottom: 40px;
+    }
+  
+    #lista3 {
+      margin-bottom: 40px;
+    }
+  
+    .conhecimento {
+      height: 70px;
+    }
+  
+    #links {
+      padding-top: 100px;
+      flex-direction: column;
+    }
+  
+    #links a {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+  
