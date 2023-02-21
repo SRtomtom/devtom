@@ -103,20 +103,15 @@ section#intro div#geralintro h1 {
 
 /* Quem Sou */
 #sobre_mim {
-    max-width: 80vw;
-    /*tamanho maximo da tela*/
-    align-items: center;
-    /*posição de tudo dentro dessa section*/
+    max-width: 80vw;/*tamanho maximo da tela*/
+    align-items: center; /*posição de tudo dentro dessa section*/
 
     background-color: #ffffff;
     background-size: cover;
 
     display: flex;
-    overflow: hidden;
-    /*não deixa as coisas passarem do tamanho*/
-
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row;
+    overflow: hidden; /*não deixa as coisas passarem do tamanho*/
 
     justify-content: center;
 
@@ -177,18 +172,10 @@ section#intro div#geralintro h1 {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    padding-top: 80px;
 
-
-/*
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    margin-left: auto;
-    margin-right: auto;
-*/
-
-    
+    justify-content: space-around;    
 }
 
 #portifolio h1 {
@@ -200,13 +187,13 @@ section#intro div#geralintro h1 {
 }
 
 #portifolio img {
-    width: 250px;
+    width: 265px;  /*250*/
     border-radius: 20%;
 
     transition: all 0.5s;
     border: 10px solid transparent;
 }
-
+/*
 #portifolio img:hover {
     width: 250px;
     border-radius: 20%;
@@ -214,17 +201,19 @@ section#intro div#geralintro h1 {
     -webkit-transform: scale(1.5);
     transform: scale(0.9);
 }
+*/
 
 #portifolio h3 {
     text-transform: uppercase;
-    width: 250px;
+    width: 300px;
     text-align: center;
     padding: 20px 0;
 }
 
 #portifolio h6 {
-    width: 250px;
+    width: 300px;  /*250*/
     text-align: justify;
+    
 }
 
 #portifolio div#imgtext {
@@ -234,6 +223,21 @@ section#intro div#geralintro h1 {
     flex-wrap: wrap;
     align-items: start;
     height: 50vh;
+}
+
+#portifolio #imgtext .porimgtext{
+    height: 50vh ;
+    padding: 10px;
+    border: 3px solid #FFB923;
+    border-radius: 50px;
+
+    transition: all 0.5s;
+
+}
+
+#portifolio #imgtext .porimgtext:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.19);
 }
 
 
@@ -247,6 +251,10 @@ section#intro div#geralintro h1 {
     overflow: hidden;
 
     padding-top: 80px ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
 }
 
 #linguagens h1 {
@@ -303,6 +311,10 @@ section#intro div#geralintro h1 {
 
     align-items: center;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+
     
 }
 
@@ -320,7 +332,6 @@ section#intro div#geralintro h1 {
     justify-content: space-around;
     flex-wrap: wrap;
 
-    height: 90vh;
     align-items: center;
 
     max-width: 80vh;
