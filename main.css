@@ -80,6 +80,7 @@ header nav ul li :hover {
 
 }
 
+
 /* Intro */
 #intro {
     background-image: url(img/TonDev.png);
@@ -117,7 +118,7 @@ header nav ul li :hover {
     align-items: center;
 
     margin: auto;
-    max-width: 98%;
+    max-width: 90%;
 
 }
 
@@ -151,10 +152,8 @@ header nav ul li :hover {
 #sobre_mim #quemsouimg img {
     padding: 0 30px;
 
-    
-
     border-radius: 50%;
-    
+
     width: 100%;
     object-fit: cover;
     object-position: bottom;
