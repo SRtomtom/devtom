@@ -1,50 +1,54 @@
-@media (max-width:800px) {
+@media(max-width: 800px){ 
 
-    header nav {
-        width: 100%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    body{
+        padding-bottom: 35px;
     }
 
-    #navbar {
+
+    /*NAVBAR*/
+    header #navbar{
+        text-indent: -1000px;
+        z-index: -1000;
+    }
+
+    #navbar-mobile{
         background-color: #FFB923;
-        bottom: 0;
+        z-index: 13;
         position: fixed;
-        z-index: 1;
-        height: 5%;
-    }
-
-    header nav ul {
+        bottom: 0;
+        justify-content: center;
         display: flex;
-        text-align: center;
-        height: 100%;
     }
 
-    header nav ul img {
-        width: 0rem;
+    #navbar-mobile #ul-mobile li{
+        gap: 0;
+        align-items: center;
+        margin: 3px 15%;
+
     }
 
-    header nav ul li {
+    #navbar-mobile #ul-mobile img{
+        width: 2rem;
         margin: 0;
-        list-style: none;
-        text-transform: uppercase;
     }
 
-    header nav ul li a {
-        padding-left: 3px;
-        text-align: center;
-        text-decoration: none;
-        color: #ffffff;
+    #navbar-mobile #ul-mobile .navblack{
+        width: 1.5rem;
+        filter: invert(100%);
     }
 
-    
-}
+    header nav ul li :hover {
+        transition: all 0.0s;
+        border-left: 0px solid transparent;
+        border-left: 0px solid #ffffff;
+        font-weight: bold;
+    }
 
-@media(max-width: 800px){
+    /*SOBRE MIM*/
 
     #sobre_mim {
         display: flex;
         flex-direction: column;
-    
     }
 
     #sobre_mim #quemsouimg img {
@@ -52,4 +56,9 @@
         height: 400px;
     }
 
+    /*PORTIFOLIO*/
+    #portifolio h1{
+        margin-bottom: 10%;
+    }
 }
+

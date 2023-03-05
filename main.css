@@ -8,6 +8,7 @@
 
 html {
     height: 100%;
+    background-color: #ffffff;
 }
 
 body {
@@ -340,7 +341,8 @@ header nav ul li :hover {
 
 
 #links #externos img{
-    width: 200px;
+    /*width: 200px;*/
+    width: 100px;
 }
 
 
