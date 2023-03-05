@@ -1,7 +1,13 @@
 
+
+
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    height: 100%;
 }
 
 body {
@@ -9,23 +15,20 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-html{
-    height: 100%;
-}
-
 body::-webkit-scrollbar {
     width: 5px;               
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: #FFB923;        
-  }
+}
 
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: #ffffff;    
     border-radius: 4px;       
     border: 1px solid #FFB923;  
-  }
+}
+
 
 /* navbar */
 
@@ -78,7 +81,7 @@ header nav ul li :hover {
 }
 
 /* Intro */
-section#intro {
+#intro {
     background-image: url(img/TonDev.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,7 +90,7 @@ section#intro {
     height: 100vh;
 }
 
-section#intro div#geralintro {
+#intro div#geralintro {
     height: 100vh;
 
     display: flex;
@@ -99,41 +102,32 @@ section#intro div#geralintro {
     justify-content: center;
 }
 
-section#intro div#geralintro img {
+#intro div#geralintro img {
     width: 10rem;
 }
 
-section#intro div#geralintro h1 {
+#intro div#geralintro h1 {
     font-size: 50px;
 }
 
 /* Quem Sou */
 #sobre_mim {
-    max-width: 80vw;/*tamanho maximo da tela*/
-    align-items: center; /*posição de tudo dentro dessa section*/
-
-    background-color: #ffffff;
-    background-size: cover;
-
     display: flex;
-    flex-direction: row;
-    /*overflow: hidden;*/ /*não deixa as coisas passarem do tamanho*/
 
-    justify-content: center;
+    margin: auto;
+    max-width: 50%;
 
-    gap: 20px;
+    
 }
 
+
 #sobre_mim #biografia {
-    padding: 0 100px;
+    padding: 0 30px;
 }
 
 #sobre_mim h1 {
-    font-size: 60PX;
-
-
-    border-top: 80px solid transparent;
-    border-bottom: 80px solid transparent;
+    font-size: 60px;
+    margin-bottom: 10%;
 
     text-transform: uppercase;
     text-align: center;
@@ -142,10 +136,6 @@ section#intro div#geralintro h1 {
 #sobre_mim h3 {
     text-align: justify;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 #sobre_mim h5 {
@@ -153,35 +143,25 @@ section#intro div#geralintro h1 {
     text-align: center;
 }
 
-#sobre_mim div#quemsoutext {
-    width: 50%;
-}
-
 #sobre_mim #quemsouimg {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
 }
 
 #sobre_mim #quemsouimg img {
-    max-height: 980px;
-    height: 100rem;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 50%;
+    height: 50vh;
 }
 
 /* portifólio*/
 
 #portifolio {
-    background-color: #ffffff;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-around;    
+    justify-content: space-around;   
+    margin-top: 65px;
 }
 
 #portifolio h1 {
@@ -190,6 +170,8 @@ section#intro div#geralintro h1 {
 
     text-align: center;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
 #portifolio img {
@@ -219,17 +201,17 @@ section#intro div#geralintro h1 {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: start;
-    height: 50vh;
+
+
 }
 
 #portifolio #imgtext .porimgtext{
-    height: 50vh ;
-    padding: 10px;
+
+    padding: 0 15px 30px 15px;
     border: 3px solid #FFB923;
     border-radius: 50px;
-
     transition: all 0.5s;
-
+    margin: 2%;
 }
 
 #portifolio #imgtext .porimgtext:hover{
@@ -241,13 +223,7 @@ section#intro div#geralintro h1 {
 /*habilidades*/
 
 #habilidades {
-    background-color: #ffffff;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-
-    padding-top: 80px ;
+    margin-top: 65px ;
 
     display: flex;
     flex-direction: column;
@@ -269,7 +245,6 @@ section#intro div#geralintro h1 {
     flex-wrap: wrap;
     gap: 20px;
 
-    height: 90vh;
     justify-content: center;
     align-items: center;
 }
@@ -326,47 +301,34 @@ section#intro div#geralintro h1 {
     width: 100%;
     height: 100%;
   }
-   
+
   
-
-
 
 /*links externos*/
 
 #links {
-    background-color: #ffffff;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-
-    overflow: hidden;
-
+    margin-top: 65px;
     align-items: center;
 
     display: flex;
     flex-direction: column;
-   /*justify-content: space-around;    */
+   
 }
 
 #links h1 {
    /* border-top: 80px solid transparent;*/
-
-   padding-top: 80px;
 
     text-align: center;
     text-transform: uppercase;
 }
 
 #links #externos{
-
     display: flex;
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
 
     align-items: center;
-
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -392,6 +354,3 @@ footer{
 footer #rodape{
         color: #ffffff;        
 }
-
-
-  
