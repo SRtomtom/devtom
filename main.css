@@ -114,18 +114,15 @@ header nav ul li :hover {
 #sobre_mim {
     display: flex;
 
+    align-items: center;
+
     margin: auto;
-    max-width: 50%;
+    max-width: 98%;
 
-    
-}
-
-
-#sobre_mim #biografia {
-    padding: 0 30px;
 }
 
 #sobre_mim h1 {
+
     font-size: 60px;
     margin-bottom: 10%;
 
@@ -133,13 +130,14 @@ header nav ul li :hover {
     text-align: center;
 }
 
-#sobre_mim h3 {
+#sobre_mim p {
     text-align: justify;
+    font-size: clamp(1em, 1em, 2em);
 
 }
 
 #sobre_mim h5 {
-    border-top: 15px solid transparent;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -151,8 +149,15 @@ header nav ul li :hover {
 }
 
 #sobre_mim #quemsouimg img {
+    padding: 0 30px;
+
+    
+
     border-radius: 50%;
-    height: 50vh;
+    
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 /* portifólio*/
@@ -192,6 +197,7 @@ header nav ul li :hover {
 #portifolio h6 {
     width: 300px;  /*250*/
     text-align: justify;
+    font-size: clamp(8px, 10px, 13em);
     
 }
 
