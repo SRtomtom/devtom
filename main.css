@@ -158,6 +158,10 @@ header nav ul li :hover {
     width: 100%;
     object-fit: cover;
     object-position: bottom;
+
+    
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 /* portifólio*/
