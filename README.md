@@ -15,8 +15,6 @@ https://srtomtom.github.io/devton/
 
 Proximas atualizações:
 
-Resposividade com toda a página.
+-Resposividade com toda a página.
+-Melhoria na area de contato
 
-Descrições das linguagens.
-
-Criação de area com certificados.
