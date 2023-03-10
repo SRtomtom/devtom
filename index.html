@@ -208,10 +208,13 @@
             <!--
                 tem que enviar e não baixar
 
-                action="Form/processa.php"
+                apagar o php
+                arrumar o js
+
+
 
             -->
-            <form>
+            <form action="https://formsubmit.co/srwashington.dev@gmail.com" method="POST">
                 <fieldset action="srwashington.dev@gmail.com">
                     <div class="formulario">
                         <label for="nome">Nome</label>
@@ -231,8 +234,8 @@
                     </div>  
                     <div id="whatsapp">
                         <label> whatsapp?</label>
-                        <label> <input type="radio" name="whatsapp" id="sim"> sim </label> 
-                        <label> <input type="radio" name="whatsapp" id="não"> não</label> 
+                        <label> <input type="radio" name="whatsapp" id="sim">sim </label> 
+                        <label> <input type="radio" name="whatsapp" id="não">não</label> 
                     </div>
                 </fieldset>
 
@@ -243,8 +246,11 @@
 
                 <div class="formulario">
                     <label for="msg">Mensagem</label>
-                    <textarea name="msg" id="msg" cols="30" rows="2" required></textarea>
+                    <textarea name="msg" id="msg" cols="30" rows="2"></textarea>
                 </div> 
+
+
+                <input type="hidden" name="_next" value="https://devtom.netlify.app/">
 
                 <button type="submit">Enviar mensagem</button>
             </form>

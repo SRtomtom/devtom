@@ -151,14 +151,14 @@ header nav ul li :hover {
 }
 
 #sobre_mim #quemsouimg img {
-    padding: 0 30px;
+    margin: 0 30px;
 
     border-radius: 50%;
 
     width: 100%;
     max-width: 400px;
     min-width: 300px;
-    object-fit: cover;
+    object-fit: scale-down;
     object-position: bottom;
 
     
@@ -353,41 +353,7 @@ header nav ul li :hover {
     width: 60px;
 }
 
-#section-contato input, textarea{
 
-    border: transparent solid 1px;
-    border-bottom: #FFB923 solid 3px;
-}
-
-#section-contato fieldset{
-    display: flex;
-    border: none;
-}
-
-#section-contato .formulario{
-    display: block;
-    border: none;
-}
-
-#section-contato button{
-    display: flex;
-    margin: 10px auto 0 auto;
-    text-transform: uppercase;
-    background: #fff;
-    border: solid #FFB923 2px;
-    padding: 5px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 3px #000000 ;
-
-}
-
-#section-contato button:hover{
-    background-color: #FFB923;
-    color: #fff;
-
-    box-shadow: 1px 1px 3px #000000 ;
-        
-}
 
 
 
