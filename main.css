@@ -319,38 +319,78 @@ header nav ul li :hover {
 
 /*links externos*/
 
-#links {
-    margin-top: 65px;
+#section-contato {
+    margin: 65px 0;
     align-items: center;
-
     display: flex;
     flex-direction: column;
    
 }
 
-#links h1 {
-   /* border-top: 80px solid transparent;*/
-
+#section-contato h1 {
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 30px ;
 }
 
-#links #externos{
+#section-contato #container-contato{
+    padding: 30px;
+    border: solid 3px #FFB923;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+#section-contato #icon-link{
     display: flex;
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
-
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+#section-contato #icon-link img{
+    width: 60px;
+}
+
+#section-contato input, textarea{
+
+    border: transparent solid 1px;
+    border-bottom: #FFB923 solid 3px;
+}
+
+#section-contato fieldset{
+    display: flex;
+    border: none;
+}
+
+#section-contato .formulario{
+    display: block;
+    border: none;
+}
+
+#section-contato button{
+    display: flex;
+    margin: 10px auto 0 auto;
+    text-transform: uppercase;
+    background: #fff;
+    border: solid #FFB923 2px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px #000000 ;
+
+}
+
+#section-contato button:hover{
+    background-color: #FFB923;
+    color: #fff;
+
+    box-shadow: 1px 1px 3px #000000 ;
+        
 }
 
 
-#links #externos img{
-    /*width: 200px;*/
-    width: 100px;
-}
+
 
 
 
