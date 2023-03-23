@@ -1,65 +1,60 @@
-@media(max-width: 800px){ 
+@media (max-width: 800px) {
+  body {
+    padding-bottom: 35px;
+  }
 
-    body{
-        padding-bottom: 35px;
-    }
+  /*NAVBAR*/
+  header #navbar {
+    text-indent: -1000px;
+    z-index: -1000;
+  }
 
+  #navbar-mobile {
+    background-color: #ffb923;
+    z-index: 13;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+  }
 
-    /*NAVBAR*/
-    header #navbar{
-        text-indent: -1000px;
-        z-index: -1000;
-    }
+  #navbar-mobile #ul-mobile li {
+    gap: 0;
+    align-items: center;
+    margin: 3px 15%;
+  }
 
-    #navbar-mobile{
-        background-color: #FFB923;
-        z-index: 13;
-        position: fixed;
-        bottom: 0;
-        justify-content: center;
-        display: flex;
-    }
+  #navbar-mobile #ul-mobile img {
+    width: 2rem;
+    margin: 0;
+  }
 
-    #navbar-mobile #ul-mobile li{
-        gap: 0;
-        align-items: center;
-        margin: 3px 15%;
+  #navbar-mobile #ul-mobile .navblack {
+    width: 1.5rem;
+    filter: invert(100%);
+  }
 
-    }
+  header nav ul li :hover {
+    transition: all 0s;
+    border-left: 0px solid transparent;
+    border-left: 0px solid #ffffff;
+    font-weight: bold;
+  }
 
-    #navbar-mobile #ul-mobile img{
-        width: 2rem;
-        margin: 0;
-    }
+  /*SOBRE MIM*/
 
-    #navbar-mobile #ul-mobile .navblack{
-        width: 1.5rem;
-        filter: invert(100%);
-    }
+  #sobre_mim {
+    display: flex;
+    flex-direction: column;
+  }
 
-    header nav ul li :hover {
-        transition: all 0.0s;
-        border-left: 0px solid transparent;
-        border-left: 0px solid #ffffff;
-        font-weight: bold;
-    }
+  #sobre_mim #quemsouimg img {
+    padding: 40px 0 0 0;
+    height: 400px;
+  }
 
-    /*SOBRE MIM*/
-
-    #sobre_mim {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #sobre_mim #quemsouimg img {
-        padding: 40px 0 0 0;
-        height: 400px;
-        
-    }
-
-    /*PORTIFOLIO*/
-    #portifolio h1{
-        margin-bottom: 10%;
-    }
+  /*PORTIFOLIO*/
+  #portifolio h1 {
+    margin-bottom: 10%;
+  }
 }
-

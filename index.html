@@ -172,99 +172,66 @@
               </div>
         </div>
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--LINKS EXTERNOS-->
-    <section id="section-contato">
-        <div id="container-contato">
+    <section id="contato-section">
+        <div id="contato-container">
 
             <h1>Contato</h1>
 
-            <div id="icon-link">
+            <div id="link-icon">
                 <a href="https://wa.me/5513981629031" target="_blank">     <img src="img/logotipo/whatsapp_preto.png" alt="whatsapp"></a>
                 <a href="https://github.com/SRtomtom" target="_blank">     <img src="img/logotipo/github.png" alt="github">    </a>
                 <a href="https://www.linkedin.com/in/washington-sr/" target="_blank">     <img src="img/logotipo/linkdin_preto.png" alt="linkdin">  </a>
             </div>
 
-            <!--
-                tem que enviar e não baixar
-
-                apagar o php
-                arrumar o js
-
-
-
-            -->
             <form action="https://formsubmit.co/srwashington.dev@gmail.com" method="POST">
-                <fieldset action="srwashington.dev@gmail.com">
-                    <div class="formulario">
+                <fieldset id="name-middlename">
+                    <div class="form-item">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" required>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                     </div>
 
-                    <div class="formulario">
+                    <div class="form-item">
                         <label for="sobrenome">Sobrenome</label>
-                        <input type="text" name="sobrenome" id="sobrenome" required>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
                     </div>
                 </fieldset>
 
                 <fieldset >
-                    <div class="formulario">
+                    <div class="form-item">
                         <label for="contato">Contato</label>
-                        <input type="number" name="contato" id="contato" required>
+                        <input type="number" name="contato" id="contato" placeholder="(DDD) xxxxx-xxxx" required>
                     </div>  
-                    <div id="whatsapp">
-                        <label> whatsapp?</label>
-                        <label> <input type="radio" name="whatsapp" id="sim">sim </label> 
-                        <label> <input type="radio" name="whatsapp" id="não">não</label> 
+                    <div id="whatsapp-option">
+                        <label>Pode usar o whatsapp?</label>
+                        <label> <input id="sim" type="radio" name="whatsapp" value="sim">sim </label> 
+                        <label> <input id="nao" type="radio" name="whatsapp" value="não">não</label> 
                     </div>
                 </fieldset>
 
-                <div class="formulario">
+                <div class="form-item">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" placeholder="Exemplo@exemplo.com">
                 </div> 
 
-                <div class="formulario">
+                <div class="form-item">
                     <label for="msg">Mensagem</label>
-                    <textarea name="msg" id="msg" cols="30" rows="2"></textarea>
+                    <textarea name="msg" id="msg" cols="30" rows="2" placeholder="Envie um recado, prévia de conversa e etc."></textarea>
                 </div> 
 
 
                 <input type="hidden" name="_next" value="https://devtom.netlify.app/">
 
-                <button type="submit">Enviar mensagem</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
-
-
-
     <footer>
         <div id="rodape">
-            <h6>
-                Eu irei melhorar a cada dia que passar.
-            </h6>
+            <h4>
+                "Hello, world!"
+            </h4>
         </div>
     </footer>
 
