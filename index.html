@@ -23,7 +23,7 @@
                 <a href="#"> <img src="img/logonome.png" alt="logo-tom-dev"></a>
 
                 <li> <a href="#habilidades">Habilidades</a></li>
-                <li> <a href="#links">Contatos</a></li>
+                <li> <a href="#contato-section">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -170,7 +170,7 @@
                 <a href="https://www.linkedin.com/in/washington-sr/" target="_blank">     <img src="img/logotipo/linkdin_preto.png" alt="linkdin">  </a>
             </div>
 
-            <form action="https://formsubmit.co/srwashington.dev@gmail.com" method="POST">
+            <form action="https://formsubmit.co/srwashington.dev@gmail.com" method="POST" autocomplete="off">
                 <fieldset id="name-middlename">
                     <div class="form-item">
                         <label for="nome">Nome</label>
@@ -186,7 +186,7 @@
                 <fieldset >
                     <div class="form-item">
                         <label for="contato">Contato</label>
-                        <input type="number" name="contato" id="contato" placeholder="(DDD) xxxxx-xxxx" required>
+                        <input type="tel" name="contato" id="contato" pattern="[0-9]{2}[0-9]{5}[0-9]{4}"  placeholder="(DDD) xxxxx-xxxx" required>
                     </div>  
                     <div id="whatsapp-option">
                         <label>Pode usar o whatsapp?</label>
