@@ -1,6 +1,7 @@
 @media (max-width: 800px) {
   body {
     padding-bottom: 35px;
+    padding-bottom: 5px;
   }
 
   /*NAVBAR*/
@@ -21,12 +22,12 @@
   #navbar-mobile #ul-mobile li {
     gap: 0;
     align-items: center;
-    margin: 3px 15%;
+    margin: 3px 1rem;
   }
 
   #navbar-mobile #ul-mobile img {
     width: 3.5rem;
-    margin: 0;
+    margin: 0 0.2rem;
   }
 
   #navbar-mobile #ul-mobile .navblack {
@@ -56,5 +57,14 @@
   /*PORTIFOLIO*/
   #portifolio h1 {
     margin-bottom: 10%;
+  }
+
+  #portifolio #imgtext .porimgtext {
+    transition: all 0.5s;
+  }
+
+  #portifolio #imgtext .porimgtext:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1);
   }
 }
