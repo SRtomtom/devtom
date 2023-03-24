@@ -303,6 +303,7 @@ header nav ul li :hover {
 }
 
 #contato-section #contato-container {
+  margin: 0 20px;
   padding: 30px;
   border: solid 3px #ffb923;
   border-radius: 30px;
