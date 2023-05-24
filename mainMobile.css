@@ -6,13 +6,16 @@
 
   /*NAVBAR*/
   header #navbar {
-    text-indent: -1000px;
-    z-index: -1000;
+    display: none;
+  }
+
+  #ul-desktop {
+    display: none;
   }
 
   #navbar-mobile {
     background-color: #ffb923;
-    z-index: 13;
+    z-index: 9999;
     position: fixed;
     bottom: 0;
     justify-content: center;

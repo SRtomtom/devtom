@@ -74,6 +74,10 @@ header nav ul li :hover {
   font-weight: bold;
 }
 
+#ul-mobile {
+  display: none;
+}
+
 /* Intro */
 #intro {
   background-image: url(img/TonDev.png);
@@ -194,7 +198,7 @@ header nav ul li :hover {
   font-size: clamp(8px, 10px, 13em);
 }
 
-#portifolio div#imgtext {
+#portifolio #imgtext {
   display: flex;
   gap: 20px;
   justify-content: space-around;
@@ -208,8 +212,9 @@ header nav ul li :hover {
   border-radius: 10px;
   transition: all 0.5s;
   margin: 2%;
-
   height: 28em;
+
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 #portifolio #imgtext .porimgtext:hover {
