@@ -1,0 +1,27 @@
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 6.5em;
+  }
+}
+
+@keyframes blinkCursor {
+  0% {
+    border-right-color: #000;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}

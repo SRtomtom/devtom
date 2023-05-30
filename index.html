@@ -7,31 +7,23 @@
     <title>TomDev</title>
 
     <link rel="icon" href="img/logo tomdev.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="mainMobile.css">
+    <link rel="stylesheet" href="Style/css/main.css">
+    <link rel="stylesheet" href="Style/css/mainMobile.css">
+    <link rel="stylesheet" href="Style/css/animate.css">
 </head>
 
 <body>
+    
     <header>
         <nav id="navbar">
             <ul id="ul-desktop">
                 <li> <a href="#sobre_mim">Sobre mim</a></li>
                 <li> <a href="#portifolio">Portifólio</a></li>
 
-                <a href="#"> <img src="img/logonome.png" alt="logo-tom-dev"></a>
+                <a href="#"> <img src="Style/img/logotipo/logonome.png" alt="logo-tom-dev"></a>
 
                 <li> <a href="#habilidades">Habilidades</a></li>
                 <li> <a href="#contato-section">Contatos</a></li>
-            </ul>
-
-            <ul id="ul-mobile">
-                <li> <a href="#sobre_mim"> <img class="navblack" src="img/mobile/about-me.png" alt="person"></a></li>
-                <li> <a href="#portifolio"> <img class="navblack" src="img/mobile/portfolio.png" alt="port-100"> </a></li>
-
-                <a href="#"> <img src="img/logonome.png" alt="logo-tom-dev"></a>
-
-                <li> <a href="#habilidades"> <img class="navblack" src="img/mobile/vscode.png" alt="skill"> </a></li>
-                <li> <a href="#contato-section"> <img class="navblack" src="img/mobile/contact.png" alt="Contato"> </a></li>
             </ul>
         </nav>
     </header>
@@ -43,11 +35,15 @@
 
     <!--INICIO-->
     <section id="intro">
-        <div id="geralintro">
-            <img src="img/logo tomdev.png" alt="logo">
-            <h1>TomDev</h1>
-            <h3>Bem-Vindo</h3>
+        <div id="polygonName">
+            <h3>Olá, Eu me chamo</h3>
+            <h1 id="typing-animation">Washington...</h1>
+            <h3>Seja Bem-Vindo ao meu site TomDev</h3>
         </div>
+        <div id="polygonLogo">
+            <img class="logoRotate" src="Style/img/logotipo/logo tomdev.png" alt="logo">
+        </div>
+        <div id="polygonWallpaper"></div>
     </section>
 
     <!--SOBRE MIM-->
@@ -68,7 +64,7 @@
             </div>
         </div>
         <div id="quemsouimg">
-            <img src="img/1.jpeg" alt="uma foto minha ai">
+            <img src="Style/img/profile/1.jpeg" alt="uma foto minha ai">
         </div>
 
     </section>
@@ -80,7 +76,9 @@
             
             <!--portifólio 1--> 
             <div class="porimgtext"> 
-                <a href="https://srtomtom.github.io/ping-pong/" target="_blank"><img id="pong-game" src="img/pongGame.png" alt="portifolio1"></a>
+                <a href="https://srtomtom.github.io/ping-pong/" target="_blank">
+                    <img id="pong-game" src="Style/img/Portfolio/pongGame.png" alt="ping-pong">
+                </a>
                 <h3>Ping-pong</h3>
                 <h6>
                     Aqui você verá um projeto de ping-pong feito atravéz do curso devSamurai para poder aprender mais
@@ -91,7 +89,7 @@
             <!--portifólio 2-->
             <div class="porimgtext">
                 <a href="https://srtomtom.github.io/cafeteria/" target=" _blank">
-                    <img class="imgport" src="img/cafeteria.png" alt="portifolio1">
+                    <img class="imgport" src="Style/img/Portfolio/cafeteria.png" alt="cafeteria">
                 </a>
                 <h3>Menu</h3>
                 <h6>
@@ -101,7 +99,9 @@
 
             <!--portifólio 3-->
             <div class="porimgtext">
-                <a href="https://srtomtom.github.io/TextEffect/" target=" _blank"><img class="imgport" src="img/MaquinaEscrever.png" alt="portifolio1"></a>
+                <a href="https://srtomtom.github.io/TextEffect/" target=" _blank">
+                    <img class="imgport" src="Style/img/Portfolio/MaquinaEscrever.png" alt="maquina de escrever">
+                </a>
                 <h3>Maquina de Escrever</h3>
                 <h6>
                     Aqui você verá uma tela que mostra escrevendo o nome na tela como uma maquina de escrever.
@@ -110,7 +110,7 @@
 
             <!--portifólio 4-->
             <div class="porimgtext">
-                <a href="https://srtomtom.github.io/CardProject/" target=" _blank"><img class="imgport" src="img/CardProject.png" alt="portifolio1"></a>
+                <a href="https://srtomtom.github.io/CardProject/" target=" _blank"><img class="imgport" src="Style/img/Portfolio/CardProject.png" alt="card"></a>
                 <h3>Card</h3>
                 <h6>
                     Aqui você verá uma tela simples que muda o tema entre dark e light mode
@@ -119,7 +119,7 @@
 
             <!--portifólio 5-->
             <div class="porimgtext">
-                <a href="https://srtomtom.github.io/DarkLightMode/" target=" _blank"><img class="imgport" src="img/LightDark.png" alt="portifolio1"></a>
+                <a href="https://srtomtom.github.io/DarkLightMode/" target=" _blank"><img class="imgport" src="Style/img/Portfolio/LightDark.png" alt="light/dark"></a>
                 <h3>Dark / Light Mode</h3>
                 <h6>
                     Aqui você verá uma tela simples que muda o tema entre dark e light mode.
@@ -135,9 +135,9 @@
         <div id="skills">
             <h3>Linguagens e Ferramentas de programação</h3>
             <div id="Linguagens">
-                <img class="conhecimento" src="img/logotipo/html5.png" alt="html5">
-                <img class="conhecimento" src="img/logotipo/css3.png" alt="css3">
-                <img class="conhecimento" src="img/logotipo/JavaScript.png" alt="js">
+                <img class="conhecimento" src="style/img/logotipo/html5.png" alt="html5">
+                <img class="conhecimento" src="style/img/logotipo/css3.png" alt="css3">
+                <img class="conhecimento" src="style/img/logotipo/JavaScript.png" alt="js">
             </div>
         </div>
          
@@ -146,16 +146,16 @@
             <h3>Certificados</h3>
             <div class="certificate-container">
                 <div class="box">
-                    <img src="img/certificados/UDEMY - UC-abe58f88-2fee-4947-9905-f4c6b4c06473.jpg">
+                    <img src="style/img/certificados/UDEMY - UC-abe58f88-2fee-4947-9905-f4c6b4c06473.jpg">
                   </div>
                 <div class="box">
-                  <img src="img/certificados/Certificado - Lógica de Programação Básica - 5df2ac66-7537-4b52-9923-fdd01ba074fb.jpg">
+                  <img src="style/img/certificados/Certificado - Lógica de Programação Básica - 5df2ac66-7537-4b52-9923-fdd01ba074fb.jpg">
                 </div>
                 <div class="box">
-                  <img src="img/certificados/Certificado - Lógica de Programação Avançada - 6a6fac04-7445-49ef-a3ce-857da39096c5.jpg">
+                  <img src="style/img/certificados/Certificado - Lógica de Programação Avançada - 6a6fac04-7445-49ef-a3ce-857da39096c5.jpg">
                 </div>
                 <div class="box">
-                  <img src="img/certificados/Certificado - Ping-Pong - d6442dd1-0759-4182-b403-d3449085fb39.jpg">
+                  <img src="style/img/certificados/Certificado - Ping-Pong - d6442dd1-0759-4182-b403-d3449085fb39.jpg">
                 </div>
         </div>
         
@@ -167,9 +167,9 @@
             <h1>Contato</h1>
 
             <div id="link-icon">
-                <a href="https://wa.me/5513981629031" target="_blank">     <img src="img/logotipo/whatsapp_preto.png" alt="whatsapp"></a>
-                <a href="https://github.com/SRtomtom" target="_blank">     <img src="img/logotipo/github.png" alt="github">    </a>
-                <a href="https://www.linkedin.com/in/washington-sr/" target="_blank">     <img src="img/logotipo/linkdin_preto.png" alt="linkdin">  </a>
+                <a href="https://wa.me/5513981629031" target="_blank">     <img src="style/img/logotipo/whatsapp_preto.png" alt="whatsapp"></a>
+                <a href="https://github.com/SRtomtom" target="_blank">     <img src="style/img/logotipo/github.png" alt="github">    </a>
+                <a href="https://www.linkedin.com/in/washington-sr/" target="_blank">     <img src="style/img/logotipo/linkdin_preto.png" alt="linkdin">  </a>
             </div>
 
             <form action="https://formsubmit.co/srwashington.dev@gmail.com" method="POST" autocomplete="off">
@@ -224,3 +224,6 @@
 </body>
 
 </html>
+
+
+ab
