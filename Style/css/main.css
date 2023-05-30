@@ -18,6 +18,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   background: var(--light-mode-base);
+  color: var(--dark-mode-base);
 }
 
 body::-webkit-scrollbar {
@@ -90,7 +91,7 @@ header nav ul li :hover {
 
 #typing-animation {
   animation: blinkCursor 500ms infinite normal,
-    typing 4s steps(20) 1s normal both;
+    typing 2s steps(30) 0.5s normal both;
 }
 
 #intro #polygonWallpaper,
